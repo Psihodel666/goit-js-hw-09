@@ -30,18 +30,17 @@ function onFormSubmite(e){
     refs.form.reset();
 }
 
-// function textInForm(){
-//     const saveText = JSON.parse(localStorage.getItem("feedback-form-state"));
+function textInForm(){
+    const saveText = JSON.parse(localStorage.getItem("feedback-form-state"));
     
-//     const emeil = refs.input.value;
-//     const message = refs.textarea.value;
-//     if(emeil != undefined){
-//         refs.input.value = saveText.emeil;
-//     }
-//     if(message != undefined){
-//         refs.textarea.value = saveText.messege;
-//     }
+    const emeil = refs.input.value;
+    const message = refs.textarea.value;
+    if(emeil != undefined){
+        refs.input.value = saveText.emeil;
+    }
+    if(message != undefined){
+        refs.textarea.value = saveText.messege;
+    }
     
-// }
-// textInForm();
-// refs.form.value = JSON.parse(localStorage.getItem("feedback-form-state"))
+}
+textInForm();
