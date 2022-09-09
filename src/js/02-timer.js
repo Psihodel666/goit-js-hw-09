@@ -52,7 +52,7 @@ const options = {
   refs.btn.setAttribute('disabled', 'disabled')
   flatpickr(refs.input, options);
   refs.btn.addEventListener('click',() =>{
-    timerId = setInterval(() => {
+   const timerId = setInterval(() => {
     const ms = selectedDatess.result - Date.now();
     convertMs(ms);
   },1000)
