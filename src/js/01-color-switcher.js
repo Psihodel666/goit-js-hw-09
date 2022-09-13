@@ -23,6 +23,8 @@ import throttle from 'lodash.throttle';
       refs.body.style.backgroundColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
     }, 1000);
   }
+
+  
   function stop(){
     refs.btnStart.removeAttribute('disabled');
     clearInterval(colorBody);
