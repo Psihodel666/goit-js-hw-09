@@ -109,7 +109,7 @@ const options = {
   }
 
 
-console.log(refs.div)
+
 
 refs.timerWrap.style.display = "flex";
 refs.timerWrap.style.textAlign = 'center'
@@ -126,6 +126,3 @@ refs.number.forEach(el => {
   el.style.fontWeight = '600'
 })
 
-  
-
-console.log(refs.field)
