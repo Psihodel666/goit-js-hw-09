@@ -15,6 +15,8 @@ import throttle from 'lodash.throttle';
   refs.btnStop.addEventListener('click', stop);
   refs.btnStop.setAttribute('disabled', true)
 
+
+  let colorBodyInterval;
   function getRandomHexColor() {
     return  `#${Math.floor(Math.random() * 16777215).toString(16)}`;
    
@@ -27,7 +29,7 @@ import throttle from 'lodash.throttle';
    
       colorBodyInterval = setInterval(() =>{
         if(isActive === true){
-          clearInterval(colorBody)  
+          clearInterval(colorBodyInterval)  
           return;
         }
         
